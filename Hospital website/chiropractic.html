@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Capstone Project: Create a Public Marketing Website
+        Author: Somath Choup
+    -->
+    <meta charset="UTF-8"/>
+    <title>LPG Chiropractic Treatment</title>
+    <script src="modernizr.js"></script>
+    <link href="layout.css" rel="stylesheet"/>
+    <meta name="desctiption" content="A website to explain LPG's services and staff to potential new customers."/>
+    <meta name="keywords" content="LPG, Cardiologoy, Oncology, Wellness, Chiropractic, Emergency, Medical, physician"/>
+  </head>
+
+  <body>
+    <header>
+      <div id="navbar">
+        <a href="home.html">LPG Medical Treatment</a>
+        <a href="cardio.html">Cardiologoy</a>
+        <a href="Oncology.html">Oncology</a>
+        <a href="Wellness.html">Wellness</a>
+        <a class ="active" href="Chiropractic.html">Chiropractic</a>
+        <a href="Emergency.html">Emergency</a>    
+        <a href="form.html">Contact Us</a>               
+      </div>
+    </header>
+
+    <br>
+
+    <div class="row">
+      <div class="column" style="background-color:#ddd;">
+        <div class="row">
+          <div class="column" style="background-color:#ddd;">
+            <center><h2><font color="black">LPG Chiropractic</h2></font></center>
+          </div>
+          <p>Chiropractic is an alternative to medication. We mainly deal with treatment of mechanical disorders of the musculoskeletal system. Having
+            some back pain? We can help. Make an appointment today and our physicians can give you a diagnosis.   </p>                                        
+        </div>
+
+                <br>
+
+        <div class="slideshow-container">
+          <div class="mySlides">
+            <img src="doct.jpg" alt="doctor" width="385px" height="275px" class="border">                     
+          </div>                 
+          <div class="mySlides">
+            <q>Their chiropractor really works with you to make your feel better. I go nearly every week.</q>
+            <p class="author">- Hans Volter</p>
+          </div>
+          <div class="mySlides">
+            <q>When my lower back was killing me, they fixed me right up.</q>
+            <p class="author">- Fred the Red</p>
+          </div>    
+          <!-- Next/prev buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>       
+                   
+        <!-- Dots/bullets/indicators -->
+        <div class="dot-container">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </div>
+    </div>
+  </body>   
+  <script src="script.js"></script>
+</html>

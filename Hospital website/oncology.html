@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Capstone Project: Create a Public Marketing Website
+        Author: Somath Choup
+    -->
+    <meta charset="UTF-8"/>
+    <title>LPG Oncology Treatment</title>
+    <script src="modernizr.js"></script>
+    <link href="layout.css" rel="stylesheet"/>
+    <meta name="desctiption" content="A website to explain LPG's services and staff to potential new customers."/>
+    <meta name="keywords" content="LPG, Cardiologoy, Oncology, Wellness, Chiropractic, Emergency, Medical, physician"/>
+    
+  </head>
+
+  <body>
+    <header>
+        <div id="navbar">
+            <a href="home.html">LPG Medical Treatment</a>
+            <a href="cardio.html">Cardiologoy</a>
+            <a class ="active" href="Oncology.html">Oncology</a>
+            <a href="Wellness.html">Wellness</a>
+            <a href="Chiropractic.html">Chiropractic</a>
+            <a href="Emergency.html">Emergency</a>
+            <a href="form.html">Contact Us</a>                   
+        </div>       
+    </header>
+
+    <br>
+
+    <div class="row">
+      <div class="column" style="background-color:#ddd;">
+        <div class="row">
+          <div class="column" style="background-color:#ddd;">
+            <center><h2><font color="black">LPG Oncology</h2></font></center>
+          </div>
+          <p>Here at LPG, we want everyone to be healthy. That includes preventing diseases from happening. Our Oncologist are able to prevent,
+            diagnosis, and treat all forms of cancer. Our facilities are state or the art and capable of treatment in the form of
+            surgical, radiation, and medical.</p>                                   
+        </div>
+
+      <br>
+
+        <div class="slideshow-container">       
+          <div class="mySlides">
+            <img src="sign.png" alt="Sign" width="355px" height="375px">
+          </div>
+          <div class="mySlides">
+            <img src="onncology.jpeg" alt="oncology" width="385px" height="275px" class="border">                     
+          </div>
+          <!-- Next/prev buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>                 
+        <!-- Dots/bullets/indicators -->
+        <div class="dot-container">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+      </div>
+    </div>
+  </body>   
+  <script src="script.js"></script>
+</html>

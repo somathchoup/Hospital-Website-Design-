@@ -1,0 +1,243 @@
+/* TEXT CSS */
+body {
+    margin: 0;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 100%;
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+#background{
+  width: 100%;
+  height: 100%;
+  background-image: url(background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.border {   
+  border-width: 5px;   
+  border-color: rgb(11, 179, 221);   
+  border-style: solid; 
+}
+
+
+#player1, #player2{
+	width:49%;
+	height: 50%;
+	text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Navbar CSS */
+#navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+
+  #navbar a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+
+  }
+
+  #navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  #navbar a.active {
+    background-color: rgb(11, 179, 221);
+    color: black;
+  }
+  
+  .content {
+    padding: 16px;
+    
+  }
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
+  .column {
+    
+    width: 50%;
+    padding: 10px;     
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+.row:after {
+  
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* IMAGE COnTAINER  */
+.imageContainer {
+  border: 1px solid #444;
+  
+
+  margin: 15px;
+  text-align: center;
+}
+.imageContainer > span {
+  display: block;
+  
+}
+.imageContainer > span > img {
+  display: inline-block;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+  /* FORM CSS */
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px;  
+    border: 2px solid black; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical
+  }
+
+  input[type=email], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 2px solid black; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical 
+  }
+
+  input[type=submit] {
+    background-color: rgb(175, 149, 76);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: black;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color:rgb(153, 210, 224);
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
+  }
+
+  
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    background: #f1f1f1f1;
+  }
+  
+  /* Slides */
+  .mySlides {
+    display: none;
+    padding: 80px;
+    text-align: center;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color:black;
+    color: white;
+  }
+  
+  /* The dot/bullet/indicator container */
+  .dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  /* Add a background color to the active dot/circle */
+  .active, .dot:hover {
+    background-color: rgb(11, 179, 221);
+  }
+  
+  /* Add an italic font style to all quotes */
+  q {font-style: italic;
+    font-weight: bold;}
+  
+  .author {color: rgb(11, 179, 221);}
+
+  /* MAP */
+  #map {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height:500px;
+}

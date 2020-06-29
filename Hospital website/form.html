@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <!-- Capstone Project: Create a Public Marketing Website
+        Author: Somath Choup
+    -->
+        <meta charset="UTF-8"/>
+        <title>LPG Contact Form</title>
+        <script src="modernizr.js"></script>
+        <link href="layout.css" rel="stylesheet"/>
+        <meta name="desctiption" content="A website to explain LPG's services and staff to potential new customers."/>
+        <meta name="keywords" content="LPG, Cardiologoy, Oncology, Wellness, Chiropractic, Emergency, Medical, physician"/>
+        
+    </head>
+
+    <body>
+        <header>
+            <div id="navbar">
+                <a href="home.html">LPG Medical Treatment</a>
+                <a href="cardio.html">Cardiologoy</a>
+                <a href="Oncology.html">Oncology</a>
+                <a href="Wellness.html">Wellness</a>
+                <a href="Chiropractic.html">Chiropractic</a>
+                <a href="Emergency.html">Emergency</a>   
+                <a class ="active" href="form.html">Contact Us</a>             
+            </div>
+    
+        </header>
+
+        <br>
+
+        <div class="container">
+            <form action="action="mailto:LPGMEDGROUP@example.com" method="POST" enctype="text/plain">
+                <label for="fname">First Name</label>
+                <br>
+                <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+                <br>
+                <label for="lname">Last Name</label>
+                <br>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                <br>
+                <label for="Email">Your Email*</label>
+                <br>
+                <input type="email" id="email" name="=email" required="required" placeholder="Your Email Address..">
+                <br>
+                <label for="Message">Message*</label>
+                <br>
+                <textarea id="subject" name="subject" required="required" placeholder="Your Message.." style="height:200px"></textarea>
+                <br>
+                <input type="submit" value="Send">
+
+                <br><br> *Indicates required field
+
+                <br><br> 
+  
+                <i>If you are having a medical emergency, please call 9-1-1.
+                    Please do not request emergency medical services via this contact form.</i>
+            </form>
+        </div>
+    </body>   
+    <script src="script.js"></script>
+</html>

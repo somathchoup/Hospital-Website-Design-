@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <!-- Capstone Project: Create a Public Marketing Website
+        Author: Somath Choup
+    -->
+      <meta charset="UTF-8"/>
+      <title>LPG Emergency Treatment</title>
+      <script src="modernizr.js"></script>
+      <link href="layout.css" rel="stylesheet"/>
+
+      <!-- Open Source CSS file for map -->
+      <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+      integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+      crossorigin=""/>
+
+      <script
+      src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+      integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+      crossorigin="">
+      </script>
+
+      <meta name="desctiption" content="A website to explain LPG's services and staff to potential new customers."/>
+      <meta name="keywords" content="LPG, Cardiologoy, Oncology, Wellness, Chiropractic, Emergency, Medical, physician"/>
+
+    </head>
+
+  <body>
+    <header>
+      <div id="navbar">
+        <a href="home.html">LPG Medical Treatment</a>
+        <a href="cardio.html">Cardiologoy</a>
+        <a href="Oncology.html">Oncology</a>
+        <a href="Wellness.html">Wellness</a>
+        <a href="Chiropractic.html">Chiropractic</a>
+        <a class ="active" href="Emergency.html">Emergency</a>     
+        <a href="form.html">Contact Us</a>              
+      </div>
+
+    </header>
+
+    <br>
+
+    <div class="row">
+      <div class="column" style="background-color:#ddd;">   
+        <div class="row">
+          <div class="column" style="background-color:#ddd;">
+            <center><h2><font color="black">LPG Emergency</h2></font></center>
+          </div>
+          <h5>Call 958-494-9494</h5>                        
+          <p>The main hospital provides compassionate and timely medical care. With over 20 highly qualified medical physicans, we are able to provide
+            extensive treatment and care. </p>
+          <h4>Emergency Servies</h4>
+          <li>Trauma ER</li>
+          <li>Medical ER</li>
+          <li>Chest Pain ER</li>
+          <li>Breathing ER</li>
+          <p>We are here for you.</p>                      
+        </div>   
+
+        <br>
+
+        <div id="map" class="border"></div>
+      </div>
+    </div>
+    <!-- CODE FOR MAP-->
+    <script>         
+      var map = L.map('map',{
+      center: [30.392224,-88.999383],
+      zoom: 17});           
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      }).addTo(map);           
+      var marker = L.marker([30.392224,-88.999383]).addTo(map);
+    </script>
+  </body>   
+  <script src="script.js"></script>    
+</html>
